@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Guzo Ave — Sale items, discounted and limited-time offers." />
+  <title>Sale — Guzo Ave</title>
+  <link rel="icon" href="assets/images/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="nav-row wrap">
+      <a class="brand" href="index.html">Guzo Ave</a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">New</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="sale.html" aria-current="page">Sale</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-wrap">
+        <a class="cart-btn" href="checkout.html" style="display:flex; align-items:center; gap:0.4rem;">
+          <span id="cartCount">0</span>
+          <img src="assets/images/shopping-bag.jpg" alt="Shopping Bag" style="width:24px; height:24px;">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section class="wrap sale-section">
+      <h1 class="section-title">Sale — Limited Time Offers</h1>
+      <p class="kicker">Grab these discounted or limited-time items before they’re gone!</p>
+
+      <div class="sale-grid" style="display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:1rem; margin-top:1.5rem;">
+        <!-- Placeholder items -->
+        <div class="sale-card">
+          <img src="assets/images/mini-bluedress.jpg" alt="Sale Item 1" style="width:100%; border-radius:8px;">
+          <h3> Guzo Royal Blue Mini Dress </h3>
+          <p><span style="text-decoration:line-through;">$120.00</span> <strong>$89.00</strong></p>
+        </div>
+        <div class="sale-card">
+          <img src="assets/images/maxi-dress.jpg" alt="Sale Item 2" style="width:100%; border-radius:8px;">
+          <h3> Michelle Maxi Yellow Dress</h3>
+          <p><span style="text-decoration:line-through;">$150.00</span> <strong>$99.00</strong></p>
+        </div>
+        <div class="sale-card">
+          <img src="assets/images/brown-set.jpg" alt="Sale Item 3" style="width:100%; border-radius:8px;">
+          <h3>Laura Two Pice Set</h3>
+          <p><span style="text-decoration:line-through;">$80.00</span> <strong>$55.00</strong></p>
+        </div>
+        <div class="sale-card">
+          <img src="assets/images/orange-dress.jpg" alt="Sale Item 4" style="width:100%; border-radius:8px;">
+          <h3>Floral Maxi Dress</h3>
+          <p><span style="text-decoration:line-through;">$200.00</span> <strong>$149.00</strong></p>
+        </div>
+      </div>
+
+      <p style="margin-top:2rem; color:var(--muted); max-width:70ch;">
+        These items are only available while supplies last. Check back often for new limited-time offers.
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Guzo Ave</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Guzo Ave — Minimal luxury. Curated pieces with editorial photography." />
+  <title>Guzo Ave — Modern Minimal Fashion</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="assets/images/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="nav-row wrap">
+      <a class="brand" href="index.html">Guzo Ave</a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">New</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+<div class="cart-wrap">
+  <a class="cart-btn" href="checkout.html" style="display:flex; align-items:center; gap:0.4rem;">
+    <img src="assets/images/shopping-bag.jpg" alt="Shopping Bag" style="width:24px; height:24px;">
+  </a>
+</div>
+    
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- HERO SLIDESHOW (Clean Luxury editorial) -->
+    <section class="hero-slideshow" aria-label="Guzo Ave hero">
+      <div class="hero-slide active" style="background-image:url('assets/images/red-set.webp')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/white-dress.webp')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/white-pants.webp')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/denim-jacket.webp')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/black-pants.jpg')"></div>
+
+      <div class="hero-overlay wrap">
+        <div class="hero-copy">
+          <h1>Guzo Ave</h1>
+          <p class="lead">Minimal luxury — curated pieces for everyday elegance.</p>
+          <a class="cta" href="shop.html">Shop New</a>
+        </div>
+      </div>
+
+      <div class="hero-dots" aria-hidden="true"></div>
+    </section>
+
+  </main>
+
+  <!-- PRODUCT MODAL -->
+  <div id="productModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-label="Product details">
+      <button id="modalClose" class="modal-close" aria-label="Close modal">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Guzo Ave</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
