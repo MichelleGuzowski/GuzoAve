@@ -27,46 +27,50 @@
           <li><a href="shop.html">Shop</a></li>
           <li><a href="explore.html">Explore</a></li>
           <li><a href="sale.html">Sale</a></li>
-           <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-<div class="cart-wrap">
-  <a class="cart-btn" href="checkout.html" style="display:flex; align-items:center; gap:0.4rem;">
-    <img src="assets/images/shopping-bag.jpg" alt="Shopping Bag" style="width:24px; height:24px;">
-  </a>
-</div>
-    
+
+      <div class="cart-wrap">
+        <a class="cart-btn" href="checkout.html" style="display:flex; align-items:center; gap:0.4rem;">
+          <img src="assets/images/shopping-bag.jpg" alt="Shopping Bag" style="width:24px; height:24px;">
+        </a>
+      </div>
     </div>
   </header>
 
+  <!-- MAIN -->
+  <main>
+    <section class="wrap shop-section">
+      <h1 class="section-title">Shop</h1>
+      <p class="kicker">Browse our curated selection of minimal luxury pieces.</p>
 
-  <main class="wrap">
-    <h1>Shop</h1>
-
-    <div class="filters">
-      <label>Category:
-        <select id="categoryFilter">
-          <option value="all">All</option>
-          <option value="dresses">Dresses</option>
-          <option value="pants">Pants</option>
-        </select>
-      </label>
-      <label>Search:
-        <input id="searchInput" placeholder="Search products">
-      </label>
-    </div>
-
-    <section id="shopGrid" class="grid"></section>
-
-    <!-- Product modal -->
-    <div id="productModal" class="modal" aria-hidden="true">
-      <div class="modal-content" role="dialog" aria-modal="true">
-        <button class="modal-close" id="modalClose" aria-label="Close">×</button>
-        <div id="modalBody"></div>
+      <div class="filters" style="margin-top:1.5rem; display:flex; gap:1.5rem; flex-wrap:wrap;">
+        <label>Category:
+          <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="dresses">Dresses</option>
+            <option value="pants">Pants</option>
+          </select>
+        </label>
+        <label>Search:
+          <input id="searchInput" placeholder="Search products">
+        </label>
       </div>
-    </div>
+
+      <section id="shopGrid" class="grid" style="margin-top:1.5rem;"></section>
+
+      <!-- Product modal -->
+      <div id="productModal" class="modal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true">
+          <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+          <div id="modalBody"></div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="wrap">
       <p>&copy; <span id="yearShop"></span> Guzo Ave</p>

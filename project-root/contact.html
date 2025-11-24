@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Guzo Ave — Minimal luxury. Curated pieces with editorial photography." />
-  <title>Guzo Ave — Modern Minimal Fashion</title>
+  <meta name="description" content="Guzo Ave — Minimal luxury. Contact page." />
+  <title>Contact — Guzo Ave</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,72 @@
 
   <link rel="icon" href="assets/images/favicon.ico" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* Contact-specific styles to match checkout */
+    main.wrap {
+      font-family: 'Inter', sans-serif;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    h2.section-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p.kicker {
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      color: var(--muted, #666);
+    }
+
+    form#contactForm {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 500px;
+    }
+
+    form#contactForm label {
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    form#contactForm input,
+    form#contactForm textarea {
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: 'Inter', sans-serif;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    form#contactForm button {
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: background-color 0.3s ease;
+    }
+
+    form#contactForm button:hover {
+      background-color: #333;
+    }
+
+    .feedback {
+      font-size: 0.95rem;
+      color: crimson;
+    }
+  </style>
 </head>
 
 <body>
@@ -27,35 +93,39 @@
           <li><a href="shop.html">Shop</a></li>
           <li><a href="explore.html">Explore</a></li>
           <li><a href="sale.html">Sale</a></li>
-           <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-<div class="cart-wrap">
-  <a class="cart-btn" href="checkout.html" style="display:flex; align-items:center; gap:0.4rem;">
-    <img src="assets/images/shopping-bag.jpg" alt="Shopping Bag" style="width:24px; height:24px;">
-  </a>
-</div>
-    
+
+      <div class="cart-wrap">
+        <a class="cart-btn" href="checkout.html" style="display:flex; align-items:center; gap:0.4rem;">
+          <img src="assets/images/shopping-bag.jpg" alt="Shopping Bag" style="width:24px; height:24px;">
+        </a>
+      </div>
     </div>
   </header>
 
-
+  <!-- MAIN -->
   <main class="wrap">
-    <h1>Contact</h1>
+    <h2 class="section-title">Contact</h2>
+    <p class="kicker">We’d love to hear from you. Please fill out the form below and we’ll get back to you as soon as possible.</p>
+
     <form id="contactForm" novalidate>
-      <label for="name">Name</label>
+      <label for="nameContact">Name</label>
       <input id="nameContact" name="name" required minlength="2">
-      <label for="email">Email</label>
+
+      <label for="emailContact">Email</label>
       <input id="emailContact" name="email" type="email" required>
-      <label for="message">Message</label>
-      <textarea id="messageContact" name="message" required minlength="10"></textarea>
-      <div class="form-actions">
-        <button type="submit">Send</button>
-      </div>
+
+      <label for="messageContact">Message</label>
+      <textarea id="messageContact" name="message" required minlength="10" rows="6"></textarea>
+
+      <button type="submit">Send</button>
       <div id="formFeedback" class="feedback" aria-live="polite"></div>
     </form>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="wrap">
       <p>&copy; <span id="yearContactPage"></span> Guzo Ave</p>
