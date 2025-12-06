@@ -14,7 +14,6 @@
   <link rel="icon" href="assets/images/favicon.ico" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <style>
-    /* Contact-specific styles to match checkout */
     main.wrap {
       font-family: 'Inter', sans-serif;
       margin-top: 2rem;
@@ -74,9 +73,11 @@
       background-color: #333;
     }
 
-    .feedback {
-      font-size: 0.95rem;
-      color: crimson;
+    #confirmationMessage {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: green;
+      min-height: 1.2rem;
     }
   </style>
 </head>
@@ -112,16 +113,18 @@
 
     <form id="contactForm" novalidate>
       <label for="nameContact">Name</label>
-      <input id="nameContact" name="name" required minlength="2">
+      <input id="nameContact" name="name">
 
       <label for="emailContact">Email</label>
-      <input id="emailContact" name="email" type="email" required>
+      <input id="emailContact" name="email" type="email">
 
       <label for="messageContact">Message</label>
-      <textarea id="messageContact" name="message" required minlength="10" rows="6"></textarea>
+      <textarea id="messageContact" name="message" rows="6"></textarea>
 
       <button type="submit">Send</button>
-      <div id="formFeedback" class="feedback" aria-live="polite"></div>
+
+      <!-- Confirmation message -->
+      <div id="confirmationMessage"></div>
     </form>
   </main>
 
@@ -132,6 +135,21 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js" defer></script>
+  <script>
+    // Disable main.js validation by bypassing default
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("contactForm");
+      const confirmBox = document.getElementById("confirmationMessage");
+
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();          // stop default and main.js validation
+        confirmBox.textContent = "Your message has been sent. Thank you!";
+        form.reset();
+      });
+
+      // Set year dynamically
+      document.getElementById("yearContactPage").textContent = new Date().getFullYear();
+    });
+  </script>
 </body>
 </html>
