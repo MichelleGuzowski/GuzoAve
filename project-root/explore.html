@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Guzo Ave — Minimal luxury. Curated pieces with editorial photography." />
+  <title>Guzo Ave — Modern Minimal Fashion</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="assets/images/favicon.ico" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="nav-row wrap">
+      <a class="brand" href="index.html">Guzo Ave</a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">New</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="sale.html">Sale</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+<div class="cart-wrap">
+  <a class="cart-btn" href="checkout.html" style="display:flex; align-items:center; gap:0.4rem;">
+    <img src="assets/images/shopping-bag.jpg" alt="Shopping Bag" style="width:24px; height:24px;">
+  </a>
+</div>
+    
+    </div>
+  </header>
+
+
+  <!-- Main content -->
+  <main>
+    <section class="wrap lookbook-section">
+      <h1 class="section-title">Explore — Lookbook</h1>
+      <p class="kicker">Styled outfits & campaign imagery</p>
+
+      <!-- The system will transform this local path to a URL when serving the canvas preview -->
+     <div style="margin:1.2rem 0">
+  <img src="assets/images/denim-jacket.webp" alt="Denim Jacket Look" style="width:100%;max-width:500px;border-radius:12px;box-shadow:0 18px 40px rgba(0,0,0,0.06)">
+</div>
+
+
+      <!-- Lookbook grid — populated by assets/js/main.js using products.json -->
+      <div id="exploreGrid" class="lookbook" aria-live="polite"></div>
+
+      <!-- Optional: a small caption or curator note -->
+      <p style="margin-top:1rem;color:var(--muted);max-width:70ch">Curated looks from our current edits. Click images to view product details and add items to your cart. All photography showcases fit and fabric details.</p>
+    </section>
+  </main>
+
+  <!-- Product modal (shared) -->
+  <div id="productModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button id="modalClose" class="modal-close" aria-label="Close">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Footer (consistent) -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="yearExplore"></span> Guzo Ave</p>
+    </div>
+  </footer>

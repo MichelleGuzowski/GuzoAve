@@ -1,0 +1,37 @@
+{
+  "products": [
+    {
+      "id": "guzo-001",
+      "title": "Emilia Midi Dress",
+      "category": "dresses",
+      "price": 139.00,
+      "colors": ["Beige", "Black"],
+      "sizes": ["XS","S","M","L"],
+      "stock": {"XS":3,"S":5,"M":2,"L":1},
+      "images": ["assets/images/white-dress.webp","assets/images/red-set.webp"],
+      "description": "Minimal midi dress in breathable cotton. Styled on model for fit reference."
+    },
+    {
+      "id": "guzo-002",
+      "title": "Rhea High-Waist Jeans",
+      "category": "pants",
+      "price": 99.00,
+      "colors": ["Indigo"],
+      "sizes": ["24","25","26","27","28"],
+      "stock": {"24":2,"25":4,"26":1,"27":0,"28":3},
+      "images": ["assets/images/black-pants.jpg","assets/images/denim-jacket.webp"],
+      "description": "High-waist denim with slight taper. Model is 170cm wearing 26."
+    },
+    {
+      "id": "guzo-003",
+      "title": "Luna White Pants",
+      "category": "pants",
+      "price": 119.00,
+      "colors": ["White"],
+      "sizes": ["XS","S","M","L"],
+      "stock": {"XS":2,"S":3,"M":4,"L":2},
+      "images": ["assets/images/white-pants.webp","assets/images/white-dress.webp"],
+      "description": "Crisp tailored white pant, flattering high-rise."
+    }
+  ]
+}
